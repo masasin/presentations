@@ -6,6 +6,5 @@ layout: default
 
 * [Demo]("demo.html")
 
-2016
-
-* [A Brief History of ~~Time~~ Me](masasin_history.html)
+* 2016
+  * [A Brief History of ~~Time~~ Me](masasin_history.html)
