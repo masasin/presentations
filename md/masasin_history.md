@@ -202,6 +202,14 @@ Note: Initially there was no GUI
 # SPIRIT
 
 
+<img src="media/20160621_drone_fpv.png" width="60%" alt="Drone FPV">
+
+
+<img src="media/20160621_drone_chase.png" width="60%" alt="Drone Chase">
+
+
+<img src="media/20160621_spirit.png" width="60%" alt="SPIRIT">
+
 
 # Thanks!
 ## Any questions?
