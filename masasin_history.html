@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>A brief history of me</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+          document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+    </head>
+    <body>
+
+        <div class="reveal">
+            <div class="slides"><section  data-markdown><script type="text/template"># Jean Nassar
+## 21 June 2016
+### Rapyuta Robotics
+</script></section><section  data-markdown><script type="text/template"># Who am I?
+- Jean Nassar
+- Kyoto University, MS Mechanical Engineering
+  - Mechatronics lab
+- University of Waterloo, BASc Mechatronics Engineering 
+- Grew up on 3 continents, have 3 nationalities
+- Interested in languages, anatomy, aerospace, robotics
+  - I speak 10 languages (including 3 in learning)
+</script></section><section ><section data-markdown><script type="text/template"># Waterloo
+- BASc, Honours Mechatronics Engineering
+  - University of Waterloo
+  - Graduated in 2013
+- Best university in Canada for robotics
+  - Project-based, including many group projects
+  - Co-op system
+  - Everything you discover is yours
+</script></section><section data-markdown><script type="text/template">## Fields of study
+- Mechanical engineering
+- Electrical engineering
+- Systems engineering
+- Computer science
+- Software engineering
+</script></section><section data-markdown><script type="text/template">## Relevant courses
+- Robotics courses
+- Controls courses
+- Project-based design courses
+- Numerical methods
+- Mechatronic systems integration
+- Electromechanical machine design
+- Microprocessor systems and interfacing
+- Computer structures and realtime systems
+</script></section><section data-markdown><script type="text/template">## Co-op
+- Six work terms, four months each
+  - Construction company - Sierra Leone <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Robotics lab - Lebanon <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Additive manufacturing lab - Waterloo <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Telematics company - Waterloo <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Bicycle design company - Toronto <!-- .element: class="fragment" data-fragment-index="1" -->
+  - Industrial machine company - Toronto <!-- .element: class="fragment" data-fragment-index="1" -->
+
+(Details on résumé) <!-- .element: class="fragment" data-fragment-index="1" -->
+
+- Exposed to programming, 3D CAD, construction, and electronics <!-- .element: class="fragment" -->
+
+<aside class="notes" data-markdown>- Always treated as fulltime employee, including pay</aside></script></section><section data-markdown><script type="text/template">## Programming
+- **C++** was introduction to programaming
+  - Personal use with Arduinos
+- **C** used for data structures, RTOS, FPGA, µController
+- **Octave**/Matlab for many courses, like numerical methods
+- **LaTeX** for reports, **gnuplot** for graphing, **bash** for Linux
+- One-offs (3-4 months each) include:
+  - VHDL, PLC, LabVIEW (courses) 
+  - VBA, C#, Perl, LISP (work terms)
+- First learnt **Python** to help solve a task at work
+</script></section></section><section ><section data-markdown><script type="text/template"># Kyoto
+- MS, Mechanical Engineering 
+  - Kyoto University
+  - Mechatronics laboratory
+  - Target graduation date is September
+</script></section><section data-markdown><script type="text/template">## Summary
+- Came for Masters instead of taking job offer
+- End of term in UW was after start of term in Kyoto
+- Came for 9 months as a research student
+- Started as Masters student in April 2014
+- Research topic was decided in October 2014
+- Research topic switched completely in mid-2015
+  - Graduation delayed due to that <!-- .element: class="fragment" -->
+</script></section><section data-markdown><script type="text/template">## As a research student
+- Learned my way around lab
+- Prepared for Masters entrance exam
+- First exposure to research environment
+- Delved into Python
+  - Best practices
+  - Scipy stack (numpy, matplotlib etc)
+  - Various projects (*e.g.*, a KSP solver)
+- Basics of ROS
+
+<aside class="notes" data-markdown>- Research env:
+  - How to find papers
+  - How papers are written
+  - Requirements for something to be called research</aside></script></section></section><section  data-markdown><script type="text/template"># Programming
+</script></section><section  data-markdown><script type="text/template"># Languages
+</script></section></div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            function extend() {
+              var target = {};
+              for (var i = 0; i < arguments.length; i++) {
+                var source = arguments[i];
+                for (var key in source) {
+                  if (source.hasOwnProperty(key)) {
+                    target[key] = source[key];
+                  }
+                }
+              }
+              return target;
+            }
+
+            // Optional libraries used to extend on reveal.js
+            var deps = [
+              { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+              { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector('[data-markdown]'); } },
+              { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+              { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+              { src: 'plugin/math/math.js', async: true }
+            ];
+
+            // default options to init reveal.js
+            var defaultOptions = {
+              controls: true,
+              progress: true,
+              history: true,
+              center: true,
+              transition: 'default',
+              dependencies: deps
+            };
+
+            // options from URL query string
+            var queryOptions = Reveal.getQueryHash() || {};
+
+            var options = {};
+            options = extend(defaultOptions, options, queryOptions);
+            Reveal.initialize(options);
+        </script>
+    </body>
+</html>
+
