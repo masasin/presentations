@@ -1,14 +1,14 @@
 # Jean Nassar
-## 21 June 2016
+### 21 June 2016
 
 
 
 # Who am I?
-- Jean Nassar
-- Kyoto University, MS Mechanical Engineering
+- Jean Nassar <!-- .element: class="fragment" -->
+- Interested in languages, anatomy, aerospace, robotics <!-- .element: class="fragment" -->
+- Kyoto University, MS Mechanical Engineering <!-- .element: class="fragment" -->
   - Mechatronics laboratory
-- University of Waterloo, BASc Mechatronics Engineering 
-- Interested in languages, anatomy, aerospace, robotics
+- University of Waterloo, BASc Mechatronics Engineering  <!-- .element: class="fragment" -->
 
 
 ## I'm international!
@@ -174,17 +174,27 @@ Note: Initially there was no GUI
 
 
 # Programming
-- **C++** was introduction to programaming
-  - Personal use with Arduinos
-- **C** used for data structures, RTOS, FPGA, µController
-- **Octave**/Matlab for many courses, like numerical methods
-- **LaTeX** for reports, **gnuplot** for graphing, **bash** for Linux
+I always strive to maintain quality in all languages
+
+- Python is my daily driver
+  - Rospy
+  - Scipy stack
+  - Jupyter for exploration
+  - Templating (resume generation etc)
+- C++ for low-level programming (Arduino, mbed etc)
+- LaTeX for report generation
+
+
+## Also have experience with
+- C for data structures, RTOS, FPGA, microcontrollers
+- Octave/Matlab for many courses (e.g., numerical methods)
+- bash for Linux scripting
+- gnuplot for plot generation
 - One-offs (3-4 months each) include:
   - VHDL, PLC, LabVIEW (courses) 
   - VBA, C#, Perl, LISP (work terms)
-- First learnt **Python** to help solve a task at work
-- Delved into Python
-  - Best practices
-  - Scipy stack (numpy, matplotlib etc)
-  - Various projects (*e.g.*, a KSP solver)
-- Basics of ROS
+
+
+
+# Thanks!
+## Any questions?
