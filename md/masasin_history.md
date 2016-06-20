@@ -19,11 +19,12 @@
   - BASc, Honours Mechatronics Engineering
   - Graduated in 2013
 
+- Project-based, including many group projects
+- Cooperative education system
+- Everything you discover is yours
+
 Note:
 - Best university in Canada for robotics
-  - Project-based, including many group projects
-  - Cooperative education system
-  - Everything you discover is yours
 
 
 ## Fields of study
