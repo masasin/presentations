@@ -20,6 +20,9 @@
   - Spanish (B2)
   - German, Krio (A2); Russian, Chinese (A1)
 
+Note:
+CEFR (Common European Framework of Reference for Languages)
+
 
 
 # Waterloo
