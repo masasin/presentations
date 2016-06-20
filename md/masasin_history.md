@@ -117,6 +117,7 @@ Note:
 
 
 # Yozakura
+![Yozakura Unarmed](https://imgur.com/WJAvywg)
 
 
 
