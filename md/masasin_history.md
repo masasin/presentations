@@ -6,7 +6,7 @@
 # Who am I?
 - Jean Nassar
 - Kyoto University, MS Mechanical Engineering
-  - Mechatronics lab
+  - Mechatronics laboratory
 - University of Waterloo, BASc Mechatronics Engineering 
 - Grew up on 3 continents, have 3 nationalities
 - Interested in languages, anatomy, aerospace, robotics
@@ -18,9 +18,11 @@
 - BASc, Honours Mechatronics Engineering
   - University of Waterloo
   - Graduated in 2013
+
+Note:
 - Best university in Canada for robotics
   - Project-based, including many group projects
-  - Co-op system
+  - Cooperative education system
   - Everything you discover is yours
 
 
@@ -53,18 +55,6 @@
 - Computer structures and realtime systems
 
 
-## Programming
-- **C++** was introduction to programaming
-  - Personal use with Arduinos
-- **C** used for data structures, RTOS, FPGA, µController
-- **Octave**/Matlab for many courses, like numerical methods
-- **LaTeX** for reports, **gnuplot** for graphing, **bash** for Linux
-- One-offs (3-4 months each) include:
-  - VHDL, PLC, LabVIEW (courses) 
-  - VBA, C#, Perl, LISP (work terms)
-- First learnt **Python** to help solve a task at work
-
-
 
 # Kyoto
 - MS, Mechanical Engineering 
@@ -75,22 +65,20 @@
 
 ## Summary
 - Came for Masters instead of taking job offer
-- End of term in UW was after start of term in Kyoto
-- Came for 9 months as a research student
-- Started as Masters student in April 2014
-- Research topic was decided in October 2014
+- Research student until start of academic year
+- Masters student since April 2014
+- Research topic decided in October 2014
 - Research topic switched completely in mid-2015
   - Graduation delayed due to that <!-- .element: class="fragment" -->
 
 
 ## As a research student
-- Learned my way around lab
-- Prepared for Masters entrance exam
 - First exposure to research environment
+- Prepared for Masters entrance exam
+- Learned my way around lab
 - Delved into Python
   - Best practices
-  - Scipy stack (numpy, matplotlib etc)
-  - Various projects (*e.g.*, a KSP solver)
+  - Scipy stack (incl Jupyter, numpy, matplotlib etc)
 - Basics of ROS
 
 Note:
@@ -102,6 +90,20 @@ Note:
 
 
 # Programming
+- **C++** was introduction to programaming
+  - Personal use with Arduinos
+- **C** used for data structures, RTOS, FPGA, µController
+- **Octave**/Matlab for many courses, like numerical methods
+- **LaTeX** for reports, **gnuplot** for graphing, **bash** for Linux
+- One-offs (3-4 months each) include:
+  - VHDL, PLC, LabVIEW (courses) 
+  - VBA, C#, Perl, LISP (work terms)
+- First learnt **Python** to help solve a task at work
+- Delved into Python
+  - Best practices
+  - Scipy stack (numpy, matplotlib etc)
+  - Various projects (*e.g.*, a KSP solver)
+- Basics of ROS
 
 
 
