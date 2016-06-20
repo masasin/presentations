@@ -75,7 +75,7 @@ Note:
 - Came for Masters instead of taking job offer
 - Research student until start of academic year
 - Masters student since April 2014
-- Research topic decided in October 2014
+- Research topic approved in October 2014
 - Research topic switched completely in mid-2015
   - Graduation delayed due to that <!-- .element: class="fragment" -->
 
@@ -95,8 +95,29 @@ Note:
 - Scipy stack: incl Jupyter, numpy, matplotlib etc. KSP project
 
 
-## As a Masters student
-- 
+### As a Masters student
+- First six months were classes
+- Participated in Robocup Japan Open (rescue robotics)
+  - Software lead for Yozakura
+- Worked on original research topic
+  - Framework for controlling external devices using EMG
+  - Heavy development, but no good publishing ideas
+  - After many meetings, switched to current topic
+- Currently working on third person view for drones
+  - Codename: SPIRIT
+
+Note:
+- Original research
+  - Used off-the-shelf EMG sensor
+  - Goal was multiple types of input devices
+
+
+
+# Yozakura
+
+
+
+# SPIRIT
 
 
 
