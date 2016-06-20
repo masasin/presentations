@@ -15,8 +15,8 @@
 
 
 # Waterloo
-- BASc, Honours Mechatronics Engineering
-  - University of Waterloo
+- University of Waterloo
+  - BASc, Honours Mechatronics Engineering
   - Graduated in 2013
 
 Note:
@@ -57,8 +57,8 @@ Note:
 
 
 # Kyoto
-- MS, Mechanical Engineering 
-  - Kyoto University
+- Kyoto University
+  - MS, Mechanical Engineering 
   - Mechatronics laboratory
   - Target graduation date is September
 
