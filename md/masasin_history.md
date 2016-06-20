@@ -25,6 +25,29 @@ CEFR (Common European Framework of Reference for Languages)
 
 
 
+# Programming
+I always strive to maintain quality in all languages
+
+- Python is my daily driver
+  - Rospy
+  - Scipy stack
+  - Jupyter for exploration
+  - Templating (resume generation etc)
+- C++ for low-level programming (Arduino, mbed etc)
+- LaTeX for report generation
+
+
+## Also have experience with
+- C for data structures, RTOS, FPGA, microcontrollers
+- Octave/Matlab for many courses (e.g., numerical methods)
+- bash for Linux scripting
+- gnuplot for plot generation
+- One-offs (3-4 months each) include:
+  - VHDL, PLC, LabVIEW (courses) 
+  - VBA, C#, Perl, LISP (work terms)
+
+
+
 # Waterloo
 - University of Waterloo
   - BASc, Honours Mechatronics Engineering
@@ -170,29 +193,6 @@ Note: Initially there was no GUI
 
 
 # SPIRIT
-
-
-
-# Programming
-I always strive to maintain quality in all languages
-
-- Python is my daily driver
-  - Rospy
-  - Scipy stack
-  - Jupyter for exploration
-  - Templating (resume generation etc)
-- C++ for low-level programming (Arduino, mbed etc)
-- LaTeX for report generation
-
-
-## Also have experience with
-- C for data structures, RTOS, FPGA, microcontrollers
-- Octave/Matlab for many courses (e.g., numerical methods)
-- bash for Linux scripting
-- gnuplot for plot generation
-- One-offs (3-4 months each) include:
-  - VHDL, PLC, LabVIEW (courses) 
-  - VBA, C#, Perl, LISP (work terms)
 
 
 
