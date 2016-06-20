@@ -8,4 +8,4 @@ layout: default
 
 2016
 
-* [A Brief History of ~~Time~~ Me]("masasin_history.html")
+* [A Brief History of ~~Time~~ Me](masasin_history.html)
