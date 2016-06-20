@@ -26,8 +26,11 @@ CEFR (Common European Framework of Reference for Languages)
 
 
 # Programming
-I always strive to maintain quality in all languages
+- Experience leading, directing a small programming team
+- Always striving to maintain quality in all languages
 
+
+## Main Languages
 - Python is my daily driver
   - Rospy
   - Scipy stack
@@ -45,6 +48,10 @@ I always strive to maintain quality in all languages
 - One-offs (3-4 months each) include:
   - VHDL, PLC, LabVIEW (courses) 
   - VBA, C#, Perl, LISP (work terms)
+
+Note:
+- Passing experience with:
+  - html, js, Haskell, Ruby, nim, etc
 
 
 
