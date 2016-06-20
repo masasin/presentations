@@ -35,7 +35,7 @@ CEFR (Common European Framework of Reference for Languages)
   - Rospy
   - Scipy stack
   - Jupyter for exploration
-  - Templating (resume generation etc)
+  - Templating (like my resume generator)
 - C++ for low-level programming (Arduino, mbed etc)
 - LaTeX for report generation
 
@@ -176,7 +176,7 @@ Note:
 - RPi commands motors and servos via mbed
 - mbed collects information from attached sensors
 - RPi collects information from sensors and mbed
-- Rpi processes and sends back to base for display
+- RPi processes and sends back to base for display
 
 
 ## Communication
