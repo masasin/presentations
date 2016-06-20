@@ -8,9 +8,17 @@
 - Kyoto University, MS Mechanical Engineering
   - Mechatronics laboratory
 - University of Waterloo, BASc Mechatronics Engineering 
-- Grew up on 3 continents, have 3 nationalities
 - Interested in languages, anatomy, aerospace, robotics
-  - I speak 10 languages (including 3 in learning)
+
+
+## I'm international!
+- Grew up on 3 continents
+- Have 3 nationalities
+- Speak 8 languages
+  - English, French, Lebanese (Native)
+  - Japanese (C2); Arabic (C1)
+  - Spanish (B2)
+  - German, Krio (A2); Russian, Chinese (A1)
 
 
 
@@ -18,13 +26,12 @@
 - University of Waterloo
   - BASc, Honours Mechatronics Engineering
   - Graduated in 2013
+- Best university in Canada for robotics
 
+Note:
 - Project-based, including many group projects
 - Cooperative education system
 - Everything you discover is yours
-
-Note:
-- Best university in Canada for robotics
 
 
 ## Fields of study
@@ -75,11 +82,9 @@ Note:
 
 ## As a research student
 - First exposure to research environment
-- Prepared for Masters entrance exam
-- Learned my way around lab
-- Delved into Python
-  - Best practices
-  - Scipy stack (incl Jupyter, numpy, matplotlib etc)
+- Masters entrance exam prep (I passed!)
+- Got familiar with the lab
+- Scipy stack
 - Basics of ROS
 
 Note:
@@ -87,6 +92,7 @@ Note:
   - How to find papers
   - How papers are written
   - Requirements for something to be called research
+- Scipy stack: incl Jupyter, numpy, matplotlib etc. KSP project
 
 
 
@@ -105,7 +111,3 @@ Note:
   - Scipy stack (numpy, matplotlib etc)
   - Various projects (*e.g.*, a KSP solver)
 - Basics of ROS
-
-
-
-# Languages
