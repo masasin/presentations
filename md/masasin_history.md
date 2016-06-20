@@ -200,15 +200,154 @@ Note: Initially there was no GUI
 
 
 # SPIRIT
+- Superimposed Past Image Records In Teleoperation
+- Third person operation for drones
+- Uses ROS
+
+Note: Improved situational awareness, fewer crashes esp in constrained envs.
 
 
+## Motivation
+- Lack of spatial awareness when flying drones
+- Usually only 2D view is available
+- No knowledge about vehicle boundaries
+  - Hard to maneuver in confined spaces
+- Bonus: Works with bad communication
+
+Note: Say in the end I will give an example.
+
+
+### In First Person View
 <img src="media/20160621_drone_fpv.png" width="60%" alt="Drone FPV">
 
 
+### In Third Person (External) View
 <img src="media/20160621_drone_chase.png" width="60%" alt="Drone Chase">
 
 
+### Actual screenshot
 <img src="media/20160621_spirit.png" width="60%" alt="SPIRIT">
+
+Note: Some problems
+- Flying forward hides horizon due to pitch
+- Appearing in a previously imaged spot
+
+
+## System overview
+### Flowchart
+<img src="media/20160621_spirit_flowchart.png" width="60%" alt="SPIRIT flowchart">
+
+- Pose obtained from motion capture system
+
+
+## System overview
+### Rosgraph
+<img src="media/20160621_spirit_rosgraph.png" width="100%" alt="SPIRIT rosgraph">
+
+Note: Mention what tracking verifier does
+
+
+## Current status
+- Code is done
+- Trying to figure out good, general-purpose eval functions
+- Then there are user experiments and thesis finalization
+
+Note: Continue down if any time left
+
+
+## Configuration
+- xacro templates for launch files
+- Configured using a yaml file
+```javascript
+  pose:
+    mock_pose: false
+    real:
+      use_mocap: true
+      use_odometry: false
+```
+- Each eval_method has different params
+```javascript
+  past_image:
+    general:
+      eval_method: spirit
+      image_queue_length: 60
+    constant_distance:
+      distance: 1.5
+    constant_time_delay:
+      delay: 200
+```
+
+
+## Automatic regeneration
+- Regererate all launch files (and one xacro file!)
+```bash
+  $ ./regenerate_launch_files.py
+  Regenerating: 100%|██████| 6/6 [00:01<00:00, 4.65 files/s]
+```
+- Can easily change parameters and methods on the fly
+- Using function generators, metaprogramming
+
+
+## Visualization
+- Can't use rviz due to limitations
+- Had to write own visualization engine
+- Using OpenGL on top of pygame
+- Very responsive
+- Using wrappers to stay sane
+
+
+### Before
+```python
+  # Enable 2D orthographic projection
+  gl.glMatrixMode(gl.GL_PROJECTION)
+  gl.glPushMatrix()
+  gl.glLoadIdentity()
+  glu.gluOrtho2D(-width / 2, width / 2, -height / 2, height / 2)
+  gl.glMatrixMode(gl.GL_MODELVIEW)
+  gl.glPushMatrix()
+  gl.glLoadIdentity()
+  do_something()
+  gl.glMatrixMode(gl.GL_PROJECTION)
+  gl.glMatrixMode(gl.GL_MODELVIEW)
+```
+
+### After
+```python
+  with gl_ortho(width, height):
+      do_something()
+```
+
+Note: Abridged and undocumented for the sake of brevity
+
+
+### The fix
+```python
+  @contextmanager
+  def new_matrix(mode_start, mode_end):
+      gl.glMatrixMode(mode_start)
+      gl.glPushMatrix()
+      yield
+      gl.glPopMatrix()
+      gl.glMatrixMode(mode_end)
+
+  @contextmanager
+  def gl_ortho(w, h):
+      with new_matrix(gl.GL_PROJECTION, gl.GL_MODELVIEW):
+	  gl.glLoadIdentity()
+	  glu.gluOrtho2D(-w / 2, w / 2, -h / 2, h / 2)
+	  with new_matrix(gl.GL_MODELVIEW, gl.GL_PROJECTION):
+	      gl.glLoadIdentity()
+	      yield
+``` 
+
+
+## External packages
+- `ardrone_autonomy`
+- `tum_ardrone`
+- `joystick_drivers`
+- `mocap_optitrack`
+- `usb_cam`
+
 
 
 # Thanks!
