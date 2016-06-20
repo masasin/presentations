@@ -95,6 +95,10 @@ Note:
 - Scipy stack: incl Jupyter, numpy, matplotlib etc. KSP project
 
 
+## As a Masters student
+- 
+
+
 
 # Programming
 - **C++** was introduction to programaming
