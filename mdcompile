@@ -1,0 +1,120 @@
+#!/usr/bin/env python3.5
+from subprocess import run
+
+from docopt import docopt
+
+
+__doc__ = """
+Export a markdown presentation as html.
+
+Usage:
+    {name} <infile> [<outfile>] [options]
+
+Options:
+    -h --help                                       Show this screen
+    --version                                       Show version
+    -t --theme=<theme>                              Theme
+    -H --highlightTheme=<highlight theme>           Highlight theme
+    -T --title=<title>                              Title of the presentation
+    -s --separator=<horizontal separator>           Slide separator
+    -v --verticalSeparator=<vertical separator>     Vertical slide separator
+
+""".format(name=__file__)
+__version__ = "0.1.0"
+
+
+def main():
+    """
+    Run the script.
+
+    """
+    args = docopt(__doc__, version=__version__)
+
+    infile = args["<infile>"]
+    outfile = args["<outfile>"]
+    validate_outfile(outfile)
+    options = extract_options_string(args)
+    command = generate_command_string(infile, outfile, options)
+
+    print(command)
+    run(command.split())
+
+
+def validate_outfile(outfile):
+    """
+    Ensure index.html is not being overwritten.
+
+    index.html is a manually written file with links to presentations.
+
+    Parameters
+    ----------
+    outfile : str or None
+        The output filename.
+
+    Raises
+    ------
+    RuntimeError
+        If the user does not want to overwrite index.html.
+    ValueError
+        If the user's response is invalid.
+
+    """
+    if outfile is not None and outfile.endswith("index.html"):
+        decision = input("[WARNING] Overwrite index.html? (y/n) ")
+        if decision.lower() in ("n", "no"):
+            raise RuntimeError("Output target was index.html")
+        elif decision.lower() not in ("y", "yes"):
+            raise ValueError("Invalid response")
+
+
+def extract_options_string(args):
+    """
+    Extract the commands to be forwarded to reveal-md
+
+    Parameters
+    ----------
+    args : dict
+        The input arguments.
+
+    Return
+    ------
+    str
+        The output string.
+
+    """
+    return " ".join(["{} {}".format(arg, value) for arg, value in args.items()
+                     if value and not arg.startswith("<")])
+
+
+def generate_command_string(infile, outfile, options):
+    """
+    Generate the command to run.
+
+    Parameters
+    ----------
+    infile : str
+        The name of the input file
+    outfile : str
+        The name of the output file
+    options : str
+        The options string.
+
+    Return
+    ------
+    str
+        The command to run.
+
+    """
+    command = "/usr/bin/reveal-md {options} --static {infile}".format(
+        infile=infile,
+        options=options,
+        outfile=outfile
+    )
+    if outfile is not None:
+        command += " > {outfile}".format(outfile=outfile)
+
+    return command
+
+
+if __name__ == "__main__":
+    main()
