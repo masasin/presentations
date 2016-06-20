@@ -98,10 +98,10 @@ Note:
 - Scipy stack: incl Jupyter, numpy, matplotlib etc. KSP project
 
 
-### As a Masters student
+## As a Masters student
 - First six months were classes
 - Participated in Robocup Japan Open (rescue robotics)
-  - Software lead for Yozakura
+  - Team SHINOBI's Yozakura
 - Worked on original research topic
   - Framework for controlling external devices using EMG
   - Heavy development, but no good publishing ideas
@@ -117,7 +117,55 @@ Note:
 
 
 # Yozakura
-![Yozakura Unarmed](https://imgur.com/WJAvywg)
+<img src="https://imgur.com/WJAvywg.jpg" width="60%" alt="Yozakura Unarmed">
+
+
+## Overview
+- Lab has a Robocup team
+- 8 members worked on teleoperation robot
+- Yozakura is the team's teleoperation robot
+- Everyone wore multiple hats
+- Was software lead for robot-side development
+
+
+## Responsibilities
+- High level overview
+- Selection of language, platform, sensors, protocols
+- Teaching students about source control, Python, etc
+- Initial implementation of most details
+  - Error correction, interrupts, modularity, robustness
+  - Server, client, controller input
+  - Device drivers
+  - Motor controller
+  - Dynamixel library (unused)
+
+
+## Structure
+- Base station receives controller input to send to robot
+- RPi on robot receives, determines motor instructions
+- RPi commands motors and servos via mbed
+- mbed collects information from attached sensors
+- RPi collects information from sensors and mbed
+- Rpi processes and sends back to base for display
+
+
+## Communication
+- TCP: Transmission of commands, Ricoh Theta
+- UDP: Transmission of measurements
+- I2C: Current sensors, IMU, 4x4 thermal sensor
+- PWM: Motors
+- Serial: mbed, Dynamixels
+- Analog: CO2 sensor, Potentiometers
+
+
+## Additional notes
+- I wrote the initial server while ROS was being learnt
+- Server was replaced by ROS locally
+  - Still communicated with robot via TCP and UDP
+  - Many parts of initial server were reused
+- Not involved with robot-side devices communicating directly to server (LRF, WiFi cameras, CONTEC)
+
+Note: Initially there was no GUI
 
 
 
