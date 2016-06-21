@@ -1,10 +1,12 @@
 # Jean Nassar
 ### 21 June 2016
+[gh: @masasin](https://www.github.com/masasin)
 
 
 
 # Who am I?
-- Jean Nassar <!-- .element: class="fragment" -->
+- Jean Nassar
+- EIT <!-- .element: class="fragment" -->
 - Interested in languages, anatomy, aerospace, robotics <!-- .element: class="fragment" -->
 - Kyoto University, MS Mechanical Engineering <!-- .element: class="fragment" -->
   - Mechatronics laboratory
@@ -298,23 +300,24 @@ Note: Continue down if any time left
 
 ### Before
 ```python
-  # Enable 2D orthographic projection
-  gl.glMatrixMode(gl.GL_PROJECTION)
-  gl.glPushMatrix()
-  gl.glLoadIdentity()
-  glu.gluOrtho2D(-width / 2, width / 2, -height / 2, height / 2)
-  gl.glMatrixMode(gl.GL_MODELVIEW)
-  gl.glPushMatrix()
-  gl.glLoadIdentity()
-  do_something()
-  gl.glMatrixMode(gl.GL_PROJECTION)
-  gl.glMatrixMode(gl.GL_MODELVIEW)
+    # Enable 2D orthographic projection
+    gl.glMatrixMode(gl.GL_PROJECTION)
+    gl.glPushMatrix()
+    gl.glLoadIdentity()
+    glu.gluOrtho2D(-width / 2, width / 2, -height / 2, height / 2)
+    gl.glMatrixMode(gl.GL_MODELVIEW)
+    gl.glPushMatrix()
+    gl.glLoadIdentity()
+    do_something()
+    gl.glMatrixMode(gl.GL_PROJECTION)
+    gl.glMatrixMode(gl.GL_MODELVIEW)
 ```
+
 
 ### After
 ```python
-  with gl_ortho(width, height):
-      do_something()
+    with gl_ortho(width, height):
+        do_something()
 ```
 
 Note: Abridged and undocumented for the sake of brevity
@@ -322,22 +325,22 @@ Note: Abridged and undocumented for the sake of brevity
 
 ### The fix
 ```python
-  @contextmanager
-  def new_matrix(mode_start, mode_end):
-      gl.glMatrixMode(mode_start)
-      gl.glPushMatrix()
-      yield
-      gl.glPopMatrix()
-      gl.glMatrixMode(mode_end)
+    @contextmanager
+    def new_matrix(mode_start, mode_end):
+	gl.glMatrixMode(mode_start)
+	gl.glPushMatrix()
+	yield
+	gl.glPopMatrix()
+	gl.glMatrixMode(mode_end)
 
-  @contextmanager
-  def gl_ortho(w, h):
-      with new_matrix(gl.GL_PROJECTION, gl.GL_MODELVIEW):
-	  gl.glLoadIdentity()
-	  glu.gluOrtho2D(-w / 2, w / 2, -h / 2, h / 2)
-	  with new_matrix(gl.GL_MODELVIEW, gl.GL_PROJECTION):
-	      gl.glLoadIdentity()
-	      yield
+    @contextmanager
+    def gl_ortho(w, h):
+	with new_matrix(gl.GL_PROJECTION, gl.GL_MODELVIEW):
+	    gl.glLoadIdentity()
+	    glu.gluOrtho2D(-w / 2, w / 2, -h / 2, h / 2)
+	    with new_matrix(gl.GL_MODELVIEW, gl.GL_PROJECTION):
+		gl.glLoadIdentity()
+		yield
 ``` 
 
 
