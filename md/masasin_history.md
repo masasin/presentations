@@ -12,15 +12,17 @@
   - Mechatronics laboratory
 - University of Waterloo, BASc Mechatronics Engineering  <!-- .element: class="fragment" -->
 
+Note: Recently interested in swarm robotics too
+
 
 ## I'm international!
 - Grew up on 3 continents
 - Have 3 nationalities
 - Speak 8 languages
-  - English, French, Lebanese (Native)
-  - Japanese (C2); Arabic (C1)
+  - **English**, French, Lebanese (Native)
+  - **Japanese** (C2); Arabic (C1)
   - Spanish (B2)
-  - German, Krio (A2); Russian, Chinese (A1)
+  - **German**, Krio (A2); Russian, Chinese (A1)
 
 Note:
 CEFR (Common European Framework of Reference for Languages)
@@ -29,7 +31,7 @@ CEFR (Common European Framework of Reference for Languages)
 
 # Programming
 - Experience leading, directing a small programming team
-- Always striving to maintain quality in all languages
+- Always strive to maintain quality in all languages
 
 
 ## Main Languages
@@ -204,7 +206,7 @@ Note: Initially there was no GUI
 # SPIRIT
 - Superimposed Past Image Records In Teleoperation
 - Third person operation for drones
-- Uses ROS
+- Uses ROS and OpenGL
 
 Note: Improved situational awareness, fewer crashes esp in constrained envs.
 
@@ -220,15 +222,15 @@ Note: Say in the end I will give an example.
 
 
 ### In First Person View
-<img src="media/20160621_drone_fpv.png" width="60%" alt="Drone FPV">
+<img src="media/20160621_drone_fpv.png" alt="Drone FPV">
 
 
 ### In Third Person (External) View
-<img src="media/20160621_drone_chase.png" width="60%" alt="Drone Chase">
+<img src="media/20160621_drone_chase.png" alt="Drone Chase">
 
 
 ### Actual screenshot
-<img src="media/20160621_spirit.png" width="60%" alt="SPIRIT">
+<img src="media/20160621_spirit.png" alt="SPIRIT">
 
 Note: Some problems
 - Flying forward hides horizon due to pitch
@@ -237,14 +239,14 @@ Note: Some problems
 
 ## System overview
 ### Flowchart
-<img src="media/20160621_spirit_flowchart.png" width="60%" alt="SPIRIT flowchart">
+<img src="media/20160621_spirit_flowchart.png" alt="SPIRIT flowchart">
 
-- Pose obtained from motion capture system
+Note: Pose obtained from motion capture system
 
 
 ## System overview
 ### Rosgraph
-<img src="media/20160621_spirit_rosgraph.png" width="100%" alt="SPIRIT rosgraph">
+<img src="media/20160621_spirit_rosgraph.png" alt="SPIRIT rosgraph">
 
 Note: Mention what tracking verifier does
 
