@@ -5,7 +5,7 @@
 
 
 # Who am I?
-- Jean Nassar
+- Jean Nassar <!-- .element: class="fragment" -->
 - Engineer In Training <!-- .element: class="fragment" -->
 - Interested in languages, anatomy, aerospace, robotics <!-- .element: class="fragment" -->
 - Kyoto University, MS Mechanical Engineering <!-- .element: class="fragment" -->
