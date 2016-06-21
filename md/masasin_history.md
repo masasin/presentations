@@ -6,7 +6,7 @@
 
 # Who am I?
 - Jean Nassar
-- EIT <!-- .element: class="fragment" -->
+- Engineer In Training <!-- .element: class="fragment" -->
 - Interested in languages, anatomy, aerospace, robotics <!-- .element: class="fragment" -->
 - Kyoto University, MS Mechanical Engineering <!-- .element: class="fragment" -->
   - Mechatronics laboratory
