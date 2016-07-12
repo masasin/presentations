@@ -329,11 +329,11 @@ Note: Abridged and undocumented for the sake of brevity
 ```python
     @contextmanager
     def new_matrix(mode_start, mode_end):
-	gl.glMatrixMode(mode_start)
-	gl.glPushMatrix()
-	yield
-	gl.glPopMatrix()
-	gl.glMatrixMode(mode_end)
+	    gl.glMatrixMode(mode_start)
+	    gl.glPushMatrix()
+	    yield
+	    gl.glPopMatrix()
+	    gl.glMatrixMode(mode_end)
 
     @contextmanager
     def gl_ortho(w, h):
@@ -341,8 +341,8 @@ Note: Abridged and undocumented for the sake of brevity
 	    gl.glLoadIdentity()
 	    glu.gluOrtho2D(-w / 2, w / 2, -h / 2, h / 2)
 	    with new_matrix(gl.GL_MODELVIEW, gl.GL_PROJECTION):
-		gl.glLoadIdentity()
-		yield
+		    gl.glLoadIdentity()
+		    yield
 ``` 
 
 
