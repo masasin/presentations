@@ -315,7 +315,6 @@ Note: Continue down if any time left
     gl.glMatrixMode(gl.GL_MODELVIEW)
 ```
 
-
 ### After
 ```python
     with gl_ortho(width, height):
