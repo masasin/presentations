@@ -44,7 +44,6 @@ Note: Some examples:
   - Operator can see boundaries of drone
 - Store frames obtained from normal operation
 - Superimpose drone CG model onto stored image
-
 -v-
 ## Components
 - ROS Kinetic in a Docker container
@@ -65,7 +64,6 @@ Note:
 - Associate each frame with its pose <!-- .element: class="fragment" -->
 - Store all frames in chronological array (actually a deque) <!-- .element: class="fragment" -->
 - With each pose, select best frame and overlay <!-- .element: class="fragment" -->
-
 -v-
 ## Variables
 <img src="media/20170216_drones_ref.png" width=400 alt="Variables">
