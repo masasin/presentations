@@ -1,9 +1,3 @@
----
-title: SPIRIT Defense
-separator: -s-
-verticalSeparator: "-v-"
-theme: css/theme/simple.css
----
 ### A UAV Teleoperation System Using Subimposed Past Image Records
 #### (過去画像を用いた飛行ロボットの遠隔操作手法)
 ### Jean Nassar
