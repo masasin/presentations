@@ -55,7 +55,7 @@ Note: Some examples:
 - PS3 controller
 -v-
 ## Overview
-Flowchart!
+<img src="media/flowchart.png" width=400 alt="Flowchart">
 
 Note:
 - Operator sends commands to AR.Drone
