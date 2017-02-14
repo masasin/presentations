@@ -58,12 +58,12 @@ Note: Some examples:
 Flowchart!
 
 Note:
-- Operator sends commands to AR.Drone <!-- .element: class="fragment" -->
-- Get pose and orientation from mocap <!-- .element: class="fragment" -->
-- Reduce drone video frequency to simulate bad signal <!-- .element: class="fragment" -->
-- Associate each frame with its pose <!-- .element: class="fragment" -->
-- Store all frames in chronological array (actually a deque) <!-- .element: class="fragment" -->
-- With each pose, select best frame and overlay <!-- .element: class="fragment" -->
+- Operator sends commands to AR.Drone
+- Get pose and orientation from mocap
+- Reduce drone video frequency to simulate bad signal
+- Associate each frame with its pose
+- Store all frames in chronological array (actually a deque)
+- With each pose, select best frame and overlay
 -v-
 ## Variables
 <img src="media/20170216_drones_ref.png" width=400 alt="Variables">
@@ -80,8 +80,13 @@ Note:
 # Experiment
 -v-
 ## Setup
-- Target is a small box
-- Fly drone to target 6 m away using either:
+|||
+|---|---|
+|<img src="media/drone_long_target.jpg" width=400 alt="Variables">|<img src="media/target.jpg" width=400 alt="Variables">|
+-v-
+## Setup
+- Target is 6 m away
+- Fly drone to target using either:
   - Onboard view
   - SPIRIT view
 - Press a button when arrived
@@ -106,9 +111,11 @@ Note:
 -s-
 # Results
 -v-
-Video Onboard!
+<!-- .slide: data-background-video="media/onboard.mp4" data-background-video-loop data-background-video-muted-->
+## Onboard
 -v-
-Video SPIRIT!
+<!-- .slide: data-background-video="media/spirit.mp4" data-background-video-loop data-background-video-muted-->
+## SPIRIT
 -v-
 ## Results
 - Path length: +9.5% (CI=86.1%, $g$=0.391) <!-- .element: class="fragment highlight-red" -->
