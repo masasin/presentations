@@ -41,9 +41,24 @@ Note: Some examples:
 -v-
 ## Research Objective
 - Use only one fixed, onboard, monocular camera <!-- .element: class="fragment" -->
-- Work well in low-bandwidth situation <!-- .element: class="fragment" -->
+- Work well in low-bandwidth situations <!-- .element: class="fragment" -->
 - Increase accuracy and situational awareness <!-- .element: class="fragment" -->
 - Reduce workload and task duration <!-- .element: class="fragment" -->
+-v-
+## Related research (1/2)
+- Nielsen et al. *Ecological interfaces for improving mobile robot teleoperation*, 2007
+  - Mixed reality, including existing map data
+  - 3D environment, but 2D robot
+- Kelly et al. *Real-time photorealistic virtualized reality interface for remote mobile robot control*, 2011
+  - Extends Nielsen to outdoor environment
+  - Works in low-bandwidth situations
+  - Requires heavy sensors (LRF etc)
+-v-
+## Related research (2/2)
+- Hing et al. *Development and evaluation of a chase view for UAV operations in cluttered environments*, 2009
+  - Fixed wing UAV interface
+  - Overlays CG model onto current video
+  - Not appropriate for drones, which can stop
 
 -s-
 # Proposed Solution
