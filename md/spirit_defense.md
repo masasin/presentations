@@ -1,4 +1,5 @@
-### A UAV Teleoperation System Using Subimposed Past Image Records
+<!-- .slide: data-state="no-toc-progress" -->
+### A UAV Teleoperation System Using Subimposed Past Image Records <!-- .element: class="no-toc-progress" -->
 #### （過去画像を用いた飛行ロボットの遠隔操作手法）
 
 #### Jean Nassar
@@ -168,8 +169,9 @@ Experiment
 -v-
 ## SPIRIT video
 <video data-autoplay src="media/spirit_defense/spirit.mp4"></video>
+
 -s-
-Results
+# Results
 -v-
 ## Credibility Interval (CI)
 - Significance at 95%
@@ -227,7 +229,7 @@ Note:
 - Rel pos control: +108.7% (CI=99.9%, g=2.511)
 
 -s-
-Conclusions
+# Conclusions
 -v-
 ## Future work
 - Make evaluation more efficient
@@ -239,7 +241,7 @@ Conclusions
   - handling moving behind obstacles
 
 -s-
-## Thank you for listening
+## Thank you for listening <!-- .element: class="no-toc-progress" -->
 > because […] if you don’t know where you are, then you don’t know where you’re going. And if you don’t know where you’re going, you’re probably going wrong.
 
 Terry Pratchett
