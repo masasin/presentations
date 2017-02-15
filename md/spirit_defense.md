@@ -232,38 +232,38 @@ Note:
 |2.0|huge|
 -v-
 ## Ground tracks
-![](/media/spirit_defense/paths_overview.png)
+![](./media/spirit_defense/paths_overview.png)
 -v-
 ## Path length
-![](/media/spirit_defense/movement.png)
+![](./media/spirit_defense/movement.png)
 
 +9.5% (CI=86.1%, $g$=0.391) <!-- .element: class="fragment highlight-red" -->
 -v-
 ## Accuracy
-![](/media/spirit_defense/rms.png)
+![](./media/spirit_defense/rms.png)
 
 +39.8% (CI=98.1%, $g$=1.053) <!-- .element: class="fragment highlight-green" -->
 -v-
 ## Duration
-![](/media/spirit_defense/duration.png)
+![](./media/spirit_defense/duration.png)
 
 +12.9% (CI=81.5%, $g$=0.304) <!-- .element: class="fragment highlight-red" -->
 -v-
 ## NASA-TLX
-![](/media/spirit_defense/tlx_results.png)
+![](./media/spirit_defense/tlx_results.png)
 
 $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green" -->
 -v-
 ## NASA-TLX
-![](/media/spirit_defense/tlx_components.png)
+![](./media/spirit_defense/tlx_components.png)
 -v-
 ## Survey
-![](/media/spirit_defense/survey_results.png)
+![](./media/spirit_defense/survey_results.png)
 
 +35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-green" -->
 -v-
 ## Survey
-![](/media/spirit_defense/survey_components.png)
+![](./media/spirit_defense/survey_components.png)
 
 Note:
 - Position awareness: +41.4% (CI=95.8%, g=0.909)
