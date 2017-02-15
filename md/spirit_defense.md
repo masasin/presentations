@@ -259,6 +259,12 @@ Note:
 -s-
 # Conclusions
 -v-
+## Conclusions
+- Significant increase in accuracy <!-- .element: class="fragment" -->
+- Significant decrease in workload <!-- .element: class="fragment" -->
+- Significant increases in position awareness and control, absolutely and relative to target <!-- .element: class="fragment" -->
+- Significant increase in user satisfaction <!-- .element: class="fragment" -->
+-v-
 ## Future work
 - Make evaluation more efficient
 - Increase buffer size
