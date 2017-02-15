@@ -18,7 +18,7 @@ February 16, 2017
   - line-of-sight
   - Onboard camera <!-- .element: class="fragment highlight-blue" -->
 -v-
-## Problems (onboard)
+## Problems
 - No knowledge of vehicle boundaries
 - Degradation of signal
   - long distance to drone
@@ -99,7 +99,7 @@ $E(f) =  k_1\sqrt{\Delta x_D^2 + \Delta z_D^2}/{l_0} $
 
   $+ k_4\Delta \psi_F^2 + k_5l_F/l_0$
 
-Select $\underset{f}{\arg\min}\left(E\left(f\right)\right); f \in\,$frame buffer
+Select $\underset{f}{\arg\min}\left(E\left(f\right)\right);\ f \in\,$frame buffer
 
 -s-
 # Making Of
@@ -188,7 +188,7 @@ Note:
 |1.20|very large|
 |2.0|huge|
 -v-
-## Ground tracks <!-- .element: class="no-toc-progress" -->
+## Ground tracks
 ![](./media/spirit_defense/paths_overview.png)
 -v-
 ## Path length
@@ -211,7 +211,7 @@ Note:
 
 $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green" -->
 -v-
-## NASA-TLX <!-- .element: class="no-toc-progress" -->
+## NASA-TLX
 ![](./media/spirit_defense/tlx_components.png)
 -v-
 ## Survey
@@ -219,7 +219,7 @@ $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green
 
 +35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-green" -->
 -v-
-## Survey <!-- .element: class="no-toc-progress" -->
+## Survey
 ![](./media/spirit_defense/survey_components.png)
 
 Note:
@@ -241,6 +241,7 @@ Note:
   - handling moving behind obstacles
 
 -s-
+<!-- .slide: data-state="no-toc-progress" -->
 ## Thank you for listening <!-- .element: class="no-toc-progress" -->
 > because […] if you don’t know where you are, then you don’t know where you’re going. And if you don’t know where you’re going, you’re probably going wrong.
 
