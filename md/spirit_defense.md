@@ -55,7 +55,7 @@ Note: Some examples:
 - PS3 controller
 -v-
 ## Overview
-<img src="media/flowchart.png" width=400 alt="Flowchart">
+<img src="media/spirit_defense/flowchart.png" width=400 alt="Flowchart">
 
 Note:
 - Operator sends commands to AR.Drone
@@ -66,7 +66,7 @@ Note:
 - With each pose, select best frame and overlay
 -v-
 ## Variables
-<img src="media/20170216_drones_ref.png" width=400 alt="Variables">
+<img src="media/spirit_defense/drones_ref.png" width=400 alt="Variables">
 -v-
 ## Evaluation function
 - closeness to centre: $\sqrt{\Delta x^2 + \Delta z^2}/{l_0}$ <!-- .element: class="fragment" -->
@@ -79,25 +79,33 @@ Note:
 -s-
 # Experiment
 -v-
-## Setup
-|||
-|---|---|
-|<img src="media/drone_long_target.jpg" width=400 alt="Variables">|<img src="media/target.jpg" width=400 alt="Variables">|
--v-
-## Setup
-- Target is 6 m away
-- Fly drone to target using either:
-  - Onboard view
-  - SPIRIT view
-- Press a button when arrived
-- Repeat experiment with same method
-- Repeat process with remaining method
+## Procedure
+<table height="100%">
+  <tr>
+    <td valign="middle">
+      <img src="media/spirit_defense/drone_long_target.jpg" width=400/>
+    </td>
+    <td>
+      <ul>
+	<li>Fly drone to target using either:
+	  <ul>
+	    <li>Onboard view</li>
+	    <li>SPIRIT view</li>
+	  </ul>
+	</li>
+        <li>Press a button when arrived</li>
+        <li>Repeat experiment with same method</li>
+        <li>Repeat process with remaining method</li>
+      </ul>
+    </td>
+  </tr>
+</table>
 -v-
 ## Participants
 - 9 participants
 - All male, Kyoto University students
 - Age was 24.2$\,\pm\,$2.1 years
-- Practiced first
+- Practice session first
 - Odd-numbered participants: Onboard then SPIRIT
 - Even-numbered participants: SPIRIT then Onboard
 -v-
@@ -109,32 +117,70 @@ Note:
 - ROS data recorded to Bag files.
 
 -s-
+# Videos
+-v-
+## Onboard
+<video data-autoplay src="media/spirit_defense/onboard.mp4"></video>
+-v-
+## SPIRIT
+<video data-autoplay src="media/spirit_defense/spirit.mp4"></video>
+-s-
 # Results
 -v-
-<!-- .slide: data-background-video="media/onboard.mp4" data-background-video-loop data-background-video-muted-->
-## Onboard
+## Credibility Interval (CI)
+- Significance at 95%
+- <span class="fragment highlight-blue">Significant</span> or <span class="fragment highlight-red">non-significant</span>
 -v-
-<!-- .slide: data-background-video="media/spirit.mp4" data-background-video-loop data-background-video-muted-->
-## SPIRIT
+## Effect size (Hedges's $g$)
+
+|$g$|effect size|
+|---|---|
+|0.01|very small|
+|0.20|small|
+|0.50|medium|
+|0.80|large|
+|1.20|very large|
+|2.0|huge|
 -v-
-## Results
-- Path length: +9.5% (CI=86.1%, $g$=0.391) <!-- .element: class="fragment highlight-red" -->
-- Accuracy: +39.8% (CI=98.1%, $g$=1.053) <!-- .element: class="fragment highlight-blue" -->
-- Duration: +12.9% (CI=81.5%, $g$=0.304) <!-- .element: class="fragment highlight-red" -->
-- NASA-TLX score: $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-blue" -->
-- Survey score: +35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-blue" -->
+## Ground tracks
+![](/media/spirit_defense/paths_overview.png)
+-v-
+## Path length
+![](/media/spirit_defense/movement.png)
+
++9.5% (CI=86.1%, $g$=0.391) <!-- .element: class="fragment highlight-red" -->
+-v-
+## Accuracy
+![](/media/spirit_defense/rms.png)
+
++39.8% (CI=98.1%, $g$=1.053) <!-- .element: class="fragment highlight-blue" -->
+-v-
+## Duration
+![](/media/spirit_defense/duration.png)
+
++12.9% (CI=81.5%, $g$=0.304) <!-- .element: class="fragment highlight-red" -->
+-v-
+## NASA-TLX
+![](/media/spirit_defense/tlx_results.png)
+
+$-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-blue" -->
+-v-
+## NASA-TLX
+![](/media/spirit_defense/tlx_components.png)
+-v-
+## Survey
+![](/media/spirit_defense/survey_results.png)
+
++35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-blue" -->
+-v-
+## Survey
+![](/media/spirit_defense/survey_components.png)
 
 Note:
-  - Position awareness: +41.4% (CI=95.8%, g=0.909)
-  - Position control: +44.8% (CI=97.9%, g=1.173)
-  - Rel pos awareness: +105.3% (CI=98.8%, g=1.415)
-  - Rel pos control: +108.7% (CI=99.9%, g=2.511)
--v-
-Graphs!
--v-
-## Notes
-- Practice with method decreased path length
-- Practice flying decreased task duration
+- Position awareness: +41.4% (CI=95.8%, g=0.909)
+- Position control: +44.8% (CI=97.9%, g=1.173)
+- Rel pos awareness: +105.3% (CI=98.8%, g=1.415)
+- Rel pos control: +108.7% (CI=99.9%, g=2.511)
 
 -s-
 # Conclusions
@@ -153,12 +199,6 @@ Graphs!
   - rotating the horizon to keep it level
   - adding depth cues
   - handling moving behind obstacles
-
--s-
-## Licensing
-- SPIRIT is licenced under BSD 3-clause 
-- Analysis code is licensed under MIT 
-- Thesis and defense are licensed under CC-BY-SA 
 
 -s-
 ## Thank you for listening
