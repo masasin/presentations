@@ -211,7 +211,7 @@ Note:
 
 $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green" -->
 -v-
-## NASA-TLX
+## NASA-TLX Components
 ![](./media/spirit_defense/tlx_components.png)
 -v-
 ## Survey
@@ -219,7 +219,7 @@ $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green
 
 +35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-green" -->
 -v-
-## Survey
+## Survey Components
 ![](./media/spirit_defense/survey_components.png)
 
 Note:
