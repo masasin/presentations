@@ -102,7 +102,7 @@ $E(f) =  k_1\sqrt{\Delta x_D^2 + \Delta z_D^2}/{l_0} $
 Select $\underset{f}{\arg\min}\left(E\left(f\right)\right); f \in\,$frame buffer
 
 -s-
-Making Of
+# Making Of
 -v-
 ## Components
 - ROS Kinetic in a Docker container
@@ -125,7 +125,7 @@ Note:
 - With each pose, select best frame and overlay
 
 -s-
-Experiment
+# Experiment
 -v-
 ## Procedure
 <table height="100%">
@@ -173,11 +173,11 @@ Experiment
 -s-
 # Results
 -v-
-## Credibility Interval (CI)
+## Credibility Interval (CI) <!-- .element: class="no-toc-progress" -->
 - Significance at 95%
 - <span class="fragment highlight-green">Significant</span> or <span class="fragment highlight-red">non-significant</span>
 -v-
-## Effect size (Hedges's $g$)
+## Effect size (Hedges's $g$) <!-- .element: class="no-toc-progress" -->
 
 |$g$|effect size|
 |---|---|
@@ -188,7 +188,7 @@ Experiment
 |1.20|very large|
 |2.0|huge|
 -v-
-## Ground tracks
+## Ground tracks <!-- .element: class="no-toc-progress" -->
 ![](./media/spirit_defense/paths_overview.png)
 -v-
 ## Path length
@@ -211,7 +211,7 @@ Experiment
 
 $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green" -->
 -v-
-## NASA-TLX
+## NASA-TLX <!-- .element: class="no-toc-progress" -->
 ![](./media/spirit_defense/tlx_components.png)
 -v-
 ## Survey
@@ -219,7 +219,7 @@ $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green
 
 +35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-green" -->
 -v-
-## Survey
+## Survey <!-- .element: class="no-toc-progress" -->
 ![](./media/spirit_defense/survey_components.png)
 
 Note:
