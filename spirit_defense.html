@@ -55,7 +55,7 @@
               { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
               { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
               { src: 'plugin/math/math.js', async: true },
-              { src: 'plugin/toc-progress/toc-progress.js', async=true, callback:function() {toc_progress.initialize(); toc_progress.create();}}
+              { src: 'plugin/toc-progress/toc-progress.js', async: true, callback: function() {toc_progress.initialize(); toc_progress.create();}}
             ];
 
             // default options to init reveal.js
