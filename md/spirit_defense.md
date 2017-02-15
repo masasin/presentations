@@ -2,10 +2,13 @@
 ### A UAV Teleoperation System Using Subimposed Past Image Records <!-- .element: class="no-toc-progress" -->
 #### （過去画像を用いた飛行ロボットの遠隔操作手法）
 
-#### Jean Nassar
-Mechatronics Lab, Kyoto University
+Jean Nassar
 
-February 16, 2017
+<small>Mechatronics Laboratory<br/>
+Kyoto University<br/>
+February 16, 2017</small>
+
+<a href="https://git.io/spirit_defense"><small>git.io/spirit_defense</small></a>
 
 -s-
 # Background
