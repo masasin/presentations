@@ -7,7 +7,14 @@ Mechatronics Lab, Kyoto University
 February 16, 2017
 
 -s-
-# Background
+## Contents
+- **Background**
+- Proposed Solution
+- Making Of
+- Experiment
+- Videos
+- Results
+- Conclusions
 -v-
 ## Drones
 - Unmanned aerial vehicles (UAVs)
@@ -42,7 +49,14 @@ Note: Some examples:
 - Reduce workload and task duration <!-- .element: class="fragment" -->
 
 -s-
-# Proposed Solution
+## Contents
+- Background
+- **Proposed Solution**
+- Making Of
+- Experiment
+- Videos
+- Results
+- Conclusions
 -v-
 ## What is SPIRIT?
 <table height="100%">
@@ -101,7 +115,14 @@ $E(f) =  k_1\sqrt{\Delta x_D^2 + \Delta z_D^2}/{l_0} $
 Select $\underset{f}{\arg\min}\left(E\left(f\right)\right); f \in\,$frame buffer
 
 -s-
-# Making of
+## Contents
+- Background
+- Proposed Solution
+- **Making Of**
+- Experiment
+- Videos
+- Results
+- Conclusions
 -v-
 ## Components
 - ROS Kinetic in a Docker container
@@ -124,7 +145,14 @@ Note:
 - With each pose, select best frame and overlay
 
 -s-
-# Experiment
+## Contents
+- Background
+- Proposed Solution
+- Making Of
+- **Experiment**
+- Videos
+- Results
+- Conclusions
 -v-
 ## Procedure
 <table height="100%">
@@ -164,7 +192,14 @@ Note:
 - ROS data recorded to Bag files.
 
 -s-
-# Videos
+## Contents
+- Background
+- Proposed Solution
+- Making Of
+- Experiment
+- **Videos**
+- Results
+- Conclusions
 -v-
 ## Onboard
 <video data-autoplay src="media/spirit_defense/onboard.mp4"></video>
@@ -172,7 +207,14 @@ Note:
 ## SPIRIT
 <video data-autoplay src="media/spirit_defense/spirit.mp4"></video>
 -s-
-# Results
+## Contents
+- Background
+- Proposed Solution
+- Making Of
+- Experiment
+- Videos
+- **Results**
+- Conclusions
 -v-
 ## Credibility Interval (CI)
 - Significance at 95%
@@ -230,7 +272,14 @@ Note:
 - Rel pos control: +108.7% (CI=99.9%, g=2.511)
 
 -s-
-# Conclusions
+## Contents
+- Background
+- Proposed Solution
+- Making Of
+- Experiment
+- Videos
+- Results
+- **Conclusions**
 -v-
 ## Conclusions
 - Significant increase in accuracy <!-- .element: class="fragment" -->
