@@ -1,6 +1,7 @@
 ### A UAV Teleoperation System Using Subimposed Past Image Records
-#### (過去画像を用いた飛行ロボットの遠隔操作手法)
-### Jean Nassar
+#### （過去画像を用いた飛行ロボットの遠隔操作手法）
+
+#### Jean Nassar
 Mechatronics Lab, Kyoto University
 
 February 16, 2017
@@ -14,13 +15,18 @@ February 16, 2017
 - Usually at least one camera as payload
 - Usually controlled by:
   - line-of-sight
-  - first-person view (FPV) <!-- .element: class="fragment highlight-red" -->
+  - Onboard camera <!-- .element: class="fragment highlight-blue" -->
 -v-
-## Problems (FPV)
+## Problems (onboard)
 - No knowledge of vehicle boundaries
 - Degradation of signal
   - long distance to drone
-  - in bad environments
+  - in bad communication environments
+    <ul class="fragment">
+      <li>thick concrete or metal</li>
+      <li>nuclear power plants</li>
+      <li>debris in disaster areas</li>
+    </ul>
 - Recipe for disaster<!-- .element: class="fragment" -->
 
 Note: Some examples:
@@ -39,11 +45,63 @@ Note: Some examples:
 # Proposed Solution
 -v-
 ## What is SPIRIT?
+<table height="100%">
+<img src="media/spirit_defense/spirit_summary.png" width=400 style="background-color:white;">
+
+- Store frames obtained from normal operation
+- Superimpose drone CG model onto stored image
+
+Note:
 - A novel UAV teleoperation interface
 - Designed to increase situational awareness
   - Operator can see boundaries of drone
-- Store frames obtained from normal operation
-- Superimpose drone CG model onto stored image
+-v-
+## Position comparison
+<table height="100%">
+  <tr>
+    <td style="vertical-align:top">
+      <img src="media/spirit_defense/drones_ref.png" width=400/><br/>
+      <small>$l_0$: reference distance</small><br/>
+      <small>$D$: with respect to drone
+    </td>
+    <td style="vertical-align:top">
+      <ul>
+	<li class="fragment">closeness to centre: $\sqrt{\Delta x_D^2 + \Delta z_D^2}/{l_0}$</li>
+	<li class="fragment">difference in yaw: $\Delta \psi_D^2$</li>
+	<li class="fragment">distance: $((l_D - l_0)/l_0)^2$</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+-v-
+## Frame comparison
+<table height="100%">
+  <tr>
+    <td style="vertical-align:top">
+      <img src="media/spirit_defense/frames_ref.png" width=400/><br/>
+      <small>$l_0$: reference distance</small><br/>
+      <small>$F$: with respect to frame
+    </td>
+    <td style="vertical-align:top">
+      <ul>
+	<li class="fragment">difference in yaw: $\Delta \psi_F^2$</li>
+	<li class="fragment">distance: $l_F/l_0$</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+-v-
+## Evaluation function
+$E(f) =  k_1\sqrt{\Delta x_D^2 + \Delta z_D^2}/{l_0} $
+
+  $+ k_2\Delta \psi_D^2  + k_3\left(\left(l_D - l_0\right)/l_0\right)^2$
+
+  $+ k_4\Delta \psi_F^2 + k_5l_F/l_0$
+
+Select $\underset{f}{\arg\min}\left(E\left(f\right)\right); f \in\,$frame buffer
+
+-s-
+# Making of
 -v-
 ## Components
 - ROS Kinetic in a Docker container
@@ -55,7 +113,7 @@ Note: Some examples:
 - PS3 controller
 -v-
 ## Overview
-<img src="media/spirit_defense/flowchart.png" width=400 alt="Flowchart">
+<img src="media/spirit_defense/flowchart.png" width=400/>
 
 Note:
 - Operator sends commands to AR.Drone
@@ -64,17 +122,6 @@ Note:
 - Associate each frame with its pose
 - Store all frames in chronological array (actually a deque)
 - With each pose, select best frame and overlay
--v-
-## Variables
-<img src="media/spirit_defense/drones_ref.png" width=400 alt="Variables">
--v-
-## Evaluation function
-- closeness to centre: $\sqrt{\Delta x^2 + \Delta z^2}/{l_0}$ <!-- .element: class="fragment" -->
-- difference in yaw: $\Delta \psi^2$ <!-- .element: class="fragment" -->
-- difference in distance: $((l - l_0)/l_0)^2$ <!-- .element: class="fragment" -->
-- frame similarity: <!-- .element: class="fragment" -->
-  - yaw: $\Delta \psi^2$
-  - distance: $l/l_0$
 
 -s-
 # Experiment
@@ -82,10 +129,10 @@ Note:
 ## Procedure
 <table height="100%">
   <tr>
-    <td valign="middle">
+    <td style="vertical-align:top">
       <img src="media/spirit_defense/drone_long_target.jpg" width=400/>
     </td>
-    <td>
+    <td style="vertical-align:top">
       <ul>
 	<li>Fly drone to target using either:
 	  <ul>
@@ -129,7 +176,7 @@ Note:
 -v-
 ## Credibility Interval (CI)
 - Significance at 95%
-- <span class="fragment highlight-blue">Significant</span> or <span class="fragment highlight-red">non-significant</span>
+- <span class="fragment highlight-green">Significant</span> or <span class="fragment highlight-red">non-significant</span>
 -v-
 ## Effect size (Hedges's $g$)
 
@@ -153,7 +200,7 @@ Note:
 ## Accuracy
 ![](/media/spirit_defense/rms.png)
 
-+39.8% (CI=98.1%, $g$=1.053) <!-- .element: class="fragment highlight-blue" -->
++39.8% (CI=98.1%, $g$=1.053) <!-- .element: class="fragment highlight-green" -->
 -v-
 ## Duration
 ![](/media/spirit_defense/duration.png)
@@ -163,7 +210,7 @@ Note:
 ## NASA-TLX
 ![](/media/spirit_defense/tlx_results.png)
 
-$-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-blue" -->
+$-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-green" -->
 -v-
 ## NASA-TLX
 ![](/media/spirit_defense/tlx_components.png)
@@ -171,7 +218,7 @@ $-$37.5% (CI=97.6%, $g$=$-$0.978) <!-- .element: class="fragment highlight-blue"
 ## Survey
 ![](/media/spirit_defense/survey_results.png)
 
-+35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-blue" -->
++35.7% (CI=98.8%, $g$=1.304) <!-- .element: class="fragment highlight-green" -->
 -v-
 ## Survey
 ![](/media/spirit_defense/survey_components.png)
