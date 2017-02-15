@@ -7,14 +7,7 @@ Mechatronics Lab, Kyoto University
 February 16, 2017
 
 -s-
-## Contents
-- **Background**
-- Proposed Solution
-- Making Of
-- Experiment
-- Videos
-- Results
-- Conclusions
+# Background
 -v-
 ## Drones
 - Unmanned aerial vehicles (UAVs)
@@ -49,14 +42,7 @@ Note: Some examples:
 - Reduce workload and task duration <!-- .element: class="fragment" -->
 
 -s-
-## Contents
-- Background
-- **Proposed Solution**
-- Making Of
-- Experiment
-- Videos
-- Results
-- Conclusions
+# Proposed Solution
 -v-
 ## What is SPIRIT?
 <table height="100%">
@@ -115,14 +101,7 @@ $E(f) =  k_1\sqrt{\Delta x_D^2 + \Delta z_D^2}/{l_0} $
 Select $\underset{f}{\arg\min}\left(E\left(f\right)\right); f \in\,$frame buffer
 
 -s-
-## Contents
-- Background
-- Proposed Solution
-- **Making Of**
-- Experiment
-- Videos
-- Results
-- Conclusions
+Making Of
 -v-
 ## Components
 - ROS Kinetic in a Docker container
@@ -145,20 +124,13 @@ Note:
 - With each pose, select best frame and overlay
 
 -s-
-## Contents
-- Background
-- Proposed Solution
-- Making Of
-- **Experiment**
-- Videos
-- Results
-- Conclusions
+Experiment
 -v-
 ## Procedure
 <table height="100%">
   <tr>
     <td style="vertical-align:top">
-      <img src="media/spirit_defense/drone_long_target.jpg" width=400/>
+      <img src="media/spirit_defense/drone_long_target.jpg" width=360/>
     </td>
     <td style="vertical-align:top">
       <ul>
@@ -190,31 +162,14 @@ Note:
   - Onboard output
   - SPIRIT outuput
 - ROS data recorded to Bag files.
-
--s-
-## Contents
-- Background
-- Proposed Solution
-- Making Of
-- Experiment
-- **Videos**
-- Results
-- Conclusions
 -v-
-## Onboard
+## Onboard video
 <video data-autoplay src="media/spirit_defense/onboard.mp4"></video>
 -v-
-## SPIRIT
+## SPIRIT video
 <video data-autoplay src="media/spirit_defense/spirit.mp4"></video>
 -s-
-## Contents
-- Background
-- Proposed Solution
-- Making Of
-- Experiment
-- Videos
-- **Results**
-- Conclusions
+Results
 -v-
 ## Credibility Interval (CI)
 - Significance at 95%
@@ -272,20 +227,7 @@ Note:
 - Rel pos control: +108.7% (CI=99.9%, g=2.511)
 
 -s-
-## Contents
-- Background
-- Proposed Solution
-- Making Of
-- Experiment
-- Videos
-- Results
-- **Conclusions**
--v-
-## Conclusions
-- Significant increase in accuracy <!-- .element: class="fragment" -->
-- Significant decrease in workload <!-- .element: class="fragment" -->
-- Significant increases in position awareness and control, absolutely and relative to target <!-- .element: class="fragment" -->
-- Significant increase in user satisfaction <!-- .element: class="fragment" -->
+Conclusions
 -v-
 ## Future work
 - Make evaluation more efficient
