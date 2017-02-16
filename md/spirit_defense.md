@@ -206,6 +206,8 @@ Note: Users were only able to see either the Onboard view, or the SPIRIT view, n
 ## Credibility Interval (CI) <!-- .element: class="no-toc-progress" -->
 - Significance at 95%
 - <span class="fragment highlight-green">Significant</span> or <span class="fragment highlight-red">non-significant</span>
+
+Note: ROPE (region of practical equivalence) does not include zero.
 -v-
 ## Effect size (Hedges's $g$) <!-- .element: class="no-toc-progress" -->
 
