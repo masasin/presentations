@@ -138,7 +138,7 @@ Select $\underset{f}{\arg\min}\left(E\left(f\right)\right);\ f \in\,$frame buffe
 - Python 2.7 and associated packages
 - Easy to configure 
   - change YAML config file 
-  - regenerate launch files from xacro.
+  - regenerate launch files from xacro
 - PS3 controller
 -v-
 ## Overview
