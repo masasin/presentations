@@ -190,7 +190,9 @@ Note:
   - Bird's-eye view
   - Onboard output
   - SPIRIT outuput
-- ROS data recorded to Bag files.
+- ROS data recorded to Bag files
+
+Note: Users were only able to see either the Onboard view, or the SPIRIT view, not both.
 -v-
 ## Onboard video
 <video data-autoplay src="media/spirit_defense/onboard.mp4"></video>
