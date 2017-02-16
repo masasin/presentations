@@ -19,7 +19,7 @@ February 16, 2017</small>
 - Usually at least one camera as payload
 - Usually controlled by:
   - line-of-sight
-  - Onboard camera <!-- .element: class="fragment highlight-blue" -->
+  - onboard camera <!-- .element: class="fragment highlight-blue" -->
 -v-
 ## Problems
 - No knowledge of vehicle boundaries
